@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LInks</title>
+    <style>
+        /*Seletores personalizados
+
+        id = #
+        class = .
+        pseudoclass = : 
+        pseudoelement = ::
+        children = >
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            background-color: rgb(219, 108, 108);
+            text-decoration: underline;
+        }
+        a:visited{
+            color: rgb(163, 12, 12);
+        }
+        a:active{
+            color: blueviolet;
+        }
+        .especial::after{
+            content: '[✔]';
+                }
+
+        a::before{
+            content: '[✓]';
+        }
+        .especial{
+            background-color: rgba(255, 177, 177, 0.637);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://web.whatsapp.com/" target="_blank">Web whatsapp</a></li>
+        <li><a href="https://www.youtube.com/@MasterChefBrasilOficial" class="especial">Youtube do MasterChef</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/">Onde faço cursos</a></li>
+    </ul>
+</body>
+</html>
