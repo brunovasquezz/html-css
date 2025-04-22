@@ -12,6 +12,12 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(119, 136, 153, 0.575);
+        }
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -19,6 +25,13 @@
 
         td.numero{
             text-align: right;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgb(201, 165, 201);
+        }
+        tbody tr:nth-child(odd){
+            background-color: rgb(173, 173, 228);
         }
 
         thead, tfoot{
@@ -32,6 +45,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -41,10 +55,11 @@
     -->
 
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -60,11 +75,15 @@
                 <td>Rio de Janeiro</td>
                 <td  class="numero">17.219.679	</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 850 513</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td  class="numero"><strong>84.515.564</strong></td>
+                <th scope="row">Total de habitantes</th>
+                <td  class="numero"><strong>99.366.077</strong></td>
             </tr>
         </tfoot>
     </table>
