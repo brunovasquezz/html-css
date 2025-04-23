@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse; 
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem Desafio Aprofundado</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total</th>
+                <td>!1000</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3" >Mulheres</th>
+                <td>Ana Maria Piranha</td>
+                <td>Scooby Doo</td>
+                <td>Monstros S.A</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Beatriz Esterco</td>
+                <td>Kung Fu Panda</td>
+                <td>Star Wars</td>
+                <td>BeetleStar Galactica</td>
+            </tr>
+            <tr>
+                <td>Claudete do Mel</td>
+                <td>Ratatouille</td>
+                <td>Madagascar</td>
+                <td>Megamente</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Roberto Punhetilde</td>
+                <td>Invocação do Mal</td>
+                <td>Anabelle</td>
+                <td>A Freira</td>
+            </tr>
+            <tr>
+                <td>Ricardo Malvado</td>
+                <td>Meu Malvado Favorito</td>
+                <td>Spirit</td>
+                <td>Homem Aranha 2</td>
+            </tr>
+            <tr>
+                <td>Paulão Borracha</td>
+                <td>Wall-E</td>
+                <td>Carros 2</td>
+                <td>Homem de Ferro</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
