@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption{
+            font-size: 1.4em;
+            font-weight: bolder;
+        }
+        th, td{
+            border: 1px solid black;
+            text-align: left;
+            padding: 10px;
+        }
+        col.cnome{
+            background-color: greenyellow;
+        }
+        .curto{
+            text-align: center;
+        }
+        col.cgrupo{
+            background-color: red; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+        </colgroup>
+        <caption>Cadastro </caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th class="cgrupo" scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Julia</td>
+            <td class="curto">F</td>
+            <td class="curto">23</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Julius Brutus</td>
+            <td class="curto">M</td>
+            <td class="curto">20</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Brunão Perigo</td>
+            <td class="curto">M</td>
+            <td class="curto">30</td>
+            <td>Zelador</td>
+        </tr>
+        <tr>
+            <td>Pedrinha Rabisqueira</td>
+            <td class="curto">F</td>
+            <td class="curto">36</td>
+            <td>Vendedora</td>
+        </tr>
+        <tr>
+            <td>Fernanda Apiteira</td>
+            <td class="curto">F</td>
+            <td class="curto">49</td>
+            <td>Coordenadora</td>
+        </tr>
+    </table>
+</body>
+</html>
