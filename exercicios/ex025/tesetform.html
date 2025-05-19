@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        *{
+            background-color: antiquewhite;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            background-color: white;
+        }
+        div{
+            text-align: center;      
+        }
+        p{
+            font-size: 1.2em;
+        }
+        p#destaque{
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+        <h1>Formulario Teste</h1>
+        <div>
+        <form>
+            <p id="destaque">Insira seu nome</p>
+            <p><label for="inome">Nome  </label><input type="text" name="nome" id="inome" placeholder="Nome"></p>
+            <p><label for="iemail">Email    </label><input type="email" name="email" id="iemail" placeholder="Email"></p>
+            <p><label for="isenha">Senha    </label><input type="password" name="senha" id="isenha" placeholder="Senha"> </p>
+            <input type="submit" value="Enviar">
+
+        </form>
+        </div>
+</body>
+</html>
