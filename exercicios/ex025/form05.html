@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+        <h1>Exemplo de formulário</h1>
+
+        <form action="cadastro.php" method="get">
+
+            <fieldset>
+                <legend>Sexo</legend>
+
+                <input type="radio" name="sexo" id="imasculino" value="M" checked><label for="imasculino">Masculino</label> <br>
+                <input type="radio" name="sexo" id="ifeminino" value="F"><label for="ifeminino">Feminino</label>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Esportes Favoritos</legend>
+
+                <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
+                <input type="checkbox" name="esvolei" id="iesvolei"><label for="iesvolei">Volei</label>  <br>
+                <input type="checkbox" name="esbask" id="iesbask" checked><label for="iesbask">Basquete</label> <br>
+                <input type="checkbox" name="tenis" id="iestenis"><label for="iestenis">Tenis</label>
+            </fieldset>
+
+            <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Tudo">
+            </p>
+
+        </form>
+</body>
+</html>
