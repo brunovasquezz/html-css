@@ -19,6 +19,8 @@ menu{
 
 article::after{
     content: 'Esse artigo foi impresso através do site do curso em video';
+    color: blue;
+    font-size: small;
 }
 
 article{
