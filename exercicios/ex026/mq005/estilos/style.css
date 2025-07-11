@@ -62,12 +62,12 @@ article p{
     text-indent: 10px;
 }
 
-span#burger:hover{
+i#burger:hover{
     background-color: white;
     color: black;
 }
 
-span#burger{
+i#burger{
     background-color: rgb(72, 72, 72);
     width: 100vw;
     display: block;
