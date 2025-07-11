@@ -4,15 +4,84 @@
 
 /*Typical Device Breakpoints
 
-Pequenas Telas: até 600px
-Celular: de 600px ate 768px
-Tablet: de 768px até 992
-Desktop: de 992px ate 1200px
-Grandes Telas: acima de 1200px
-
+Mobile	320px - 480px	Smartphones (portrait);
+Tablet	481px - 768px	Tablets (portrait), small laptops;
+Small Desktop	769px - 1024px	Tablets (landscape), smaller laptops;
+Large Desktop	1025px and up	Desktop monitors, larger laptops.
 */
 
 
-@media print{
+@media print{ /*Impressão*/
+    body{
+        background-image: url(../../../imagens/back-print.jpg); /*desnecessario*/
+        font-family: 'Courier New', Courier, monospace;
+    }
 
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        content:'Essa impressão foi feita atraves do curso em video.com' ;
+        text-decoration: none;
+    }
+
+    h1{
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#tv {display: none;}
+    img#pc {display: none;}
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px)       { /*Tablet*/
+    body{
+        background: url(../../../imagens/back-tablet.jpg) no-repeat;
+        background-size: cover;
+    }
+
+img#phone {display: none;}
+img#tablet {display: block;}
+img#print {display: none;}
+img#tv {display: none;}
+img#pc {display: none;}
+}
+
+@media screen and (min-width: 993px) and (max-width:1200px) { /*Small desktop*/
+    body {
+      background: url(../../../imagens/back-pc.jpg) no-repeat;
+      background-size: cover;
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#tv {display: none;}
+    img#pc {display: block;}
+    
+}
+
+@media screen and (min-width: 1201px) { /*Large desktop*/
+    body{
+        background: url(../../../imagens/back-tv.jpg) no-repeat; 
+        background-size: cover;
+
+    }
+
+    main{
+        width: 600px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#tv {display: block;}
+    img#pc {display: none;}
+  
 }
