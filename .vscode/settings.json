@@ -1,3 +1,14 @@
+
 {
+    "window.zoomLevel": 0.6,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Roboto Mono",
+    "editor.lineHeight": 1.8,
+    "editor.fontLigatures": true,
+    "editor.rulers": [80, 120],
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderLineHighlight": "gutter",
+    "editor.wordWrap": "on",
+    "workbench.editor.labelFormat": "short",
     "files.autoSave": "afterDelay"
 }
