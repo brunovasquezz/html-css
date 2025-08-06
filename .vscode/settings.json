@@ -1,8 +1,8 @@
 
 {
     "window.zoomLevel": 0.6,
-    "editor.fontSize": 16,
-    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 18,
+    "editor.fontFamily": "Lexend Deca",
     "editor.lineHeight": 1.8,
     "editor.fontLigatures": true,
     "editor.rulers": [80, 120],
