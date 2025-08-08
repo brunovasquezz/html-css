@@ -14,17 +14,44 @@ body{
 }
 
 header{
-    background-color: rgb(59, 59, 53);
+    background-color: gray;
     color: white;
-    padding: 15px;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1{
     border: 1px dashed black;
+    flex: 0 0 200px;
+    text-shadow: 1px 1px 2px black;
 }
 
 header nav{
     border: 1px dashed black;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header nav a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header nav a:hover{
+    background-color: blue;
+    text-decoration: underline;
+    transition: background-color 0.5s;
 }
 
 main{
